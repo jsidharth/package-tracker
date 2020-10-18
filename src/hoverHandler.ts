@@ -8,10 +8,10 @@ export function hoverHandler(dependencies: any[]) {
       if (word) {
         const currDependency = dependencies.find((el) => el.name === word.replace(/"/g, ''));
         if (currDependency) {
-          return new vscode.Hover({
-            language: 'json',
-            value: currDependency.name + 'is awesome',
-          });
+          vscode.CommentMode;
+          return new vscode.Hover(
+            'Some Markdown text with <span style="color:blue">some *blue* text</span>',
+          );
         }
       }
     },
